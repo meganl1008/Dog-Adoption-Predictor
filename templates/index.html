@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Dog Adoption Predictor</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <style>
+            img {
+              float: right;
+            }
+        </style>
+        
+    </head>
+    <body>
+
+	<header>
+    <div class="container" style="color: blue;">
+        <div class="row">
+            <div class="col-md-12 jumbotron text-center" style="background-color: powderblue;">
+            <h1>Dog Adoption Predictor</h1>
+            </div>
+        </div>
+    </div>
+    
+	</header>
+        <div class="container">
+           <!-- <img src="https://media.giphy.com/media/xT39DkL2ZGZHA0Qr1S/giphy.gif"/> !-->
+           <img src="https://media.giphy.com/media/3orieVirtxEigOoEuY/giphy.gif" style="width:400px;height:325px;margin-left:100px;"/>
+        
+            <form action="/predict" method="POST" class="form">
+                <div class="fieldset">
+                    <label>Enter Age in Months</label>
+                    <input class="age" name="age"/>
+                </div>
+                <div class="fieldset">
+                    <label>Enter Color</label>
+                    <select class="color" name="color">
+                        <option value="1">Red Mix</option>
+                        <option value="2">Apricot</option>
+                        <option value="3">Apricot Mix</option>
+                        <option value="4">White Mix</option>
+                        <option value="5">Gray Mix</option>
+                        <option value="6">Yellow Mix</option>
+                        <option value="7">Tricolor</option>
+                        <option value="8">Gray</option>
+                        <option value="9">White</option>
+                        <option value="10">Tricolor Mix</option>
+                        <option value="11">Blue</option>
+                        <option value="12">Tan Mix</option>
+                        <option value="13">Brown Mix</option>
+                        <option value="14">Yellow</option>
+                        <option value="15">Blue Mix</option>
+                        <option value="16">Black</option>
+                        <option value="17">Tan</option>
+                        <option value="18">Brown</option>
+                        <option value="19">Red</option>
+                        <option value="20">Black Mix</option>
+                    </select>
+                <div class="fieldset">
+                    <label>Enter Breed</label>
+                    <select class="breed" name="breed">
+                        <option value="1">Border Collie Mix</option>
+                        <option value="2">Pit Bull Mix</option>
+                        <option value="3">Labrador Retriever Mix</option>
+                        <option value="4">German Shepherd Mix</option>
+                        <option value="5">Catahoula Mix</option>
+                        <option value="6">Boxer Mix</option>
+                        <option value="7">Australian Cattle Dog Mix</option>
+                        <option value="8">Chihuahua Shorthair Mix</option>
+                        <option value="9">Miniature Poodle Mix</option>
+                        <option value="10">Dachshund Mix</option>
+                    </select>
+                <div class="fieldset">
+                    <label>Enter Gender</label>
+                    <select class="gender" name="gender">
+                        <option value="1">Female</option>
+                        <option value="2">Male</option>
+                    </select>
+                <div class="fieldset">
+                    <label>Do You Want Your Dog Fixed or Intact?</label>
+                    <select class="neutered" name="neutered">
+                        <option value="1">Fixed</option>
+                        <option value="2">Intact</option>
+                    </select>       
+                </div>
+
+                <input type="submit" class="button" value="Predict">
+
+            </form>
+
+        </div>
+    </body>
+</html>

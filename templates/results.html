@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dog Adoption Results</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <style>
+        .img-container {
+          text-align: center;
+        }
+      </style>
+        
+</head>
+<body>
+
+<header>
+    <div class="container" style="color: {{font_color}};">
+        <div class="row">
+            <div class="col-md-12 jumbotron text-center" style="background-color: {{background_color}};">
+            <h1>Outcome</h1>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">     
+        <div class="fieldset">  
+            <!-- <h1 style="color:{{ color }}; font-size: 50px; text-align:center;">{{ output }}</h1> -->
+            <center>
+            <img class="img-responsive" src="{{url_for('static', filename= output)}}", alt = "cover photo" style="height: 150px; width: {{width}}">
+            </center>
+        </div>
+    </div>
+    <div class = "img-container">
+         <img src = "{{ gif }}">   
+    </div>
+    
+
+
+</body>
